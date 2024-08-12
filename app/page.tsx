@@ -13,7 +13,7 @@ export default function Home() {
         <div className="absolute top-5 right-5">
           <DarkModeToggle />
         </div>
-        <div className="text-center p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto w-full">
+        <div className="text-center p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto w-full my-4 sm:my-8">
           <div className="mb-8">
             <Image
               src="/p2.jpg"

@@ -8,7 +8,10 @@ const techStack = [
     "React",
     "Tailwind CSS",
 
-    "framer-motion"
+    "framer-motion",
+    "Google Analytics",
+    "Vercel",
+    "GitHub",
 ];
 
 const TechStackFlairs = () => {
