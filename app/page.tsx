@@ -24,7 +24,7 @@ export default function Home() {
               priority
             />
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100">Saim's Links</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100">Saim&apos;s Links</h1>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mt-4">
             Web & App Developer | Designer | CS Student
           </p>
