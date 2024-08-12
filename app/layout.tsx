@@ -9,8 +9,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
 
         <Script
-        id='gtm'
-        strategy='afterInteractive'
+          id='gtm'
+          strategy='afterInteractive'
           dangerouslySetInnerHTML={{
             __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -24,6 +24,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       </head>
       <body>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KNNF8MBX"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
         <ThemeProvider>
           {children}
         </ThemeProvider>
