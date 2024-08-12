@@ -60,7 +60,6 @@ body {
   margin: 0;
   padding: 0;
   color: #333; /* Text color for light mode */
-  overflow: hidden; /* Prevent overflow */
 }
 
 /* Dark mode styling */
