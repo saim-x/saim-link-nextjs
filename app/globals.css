@@ -2,32 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/particles.svg') repeat;
+  z-index: -1;
+  opacity: 0.2;
+}
+/* Keyframes for animating the background dots */
+@keyframes moveDots {
+  0% {
+    background-position: 0 0;
   }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Animated background dots */
+body {
+  background-color: #1a1a1a !important;
+  background: radial-gradient(circle, #ddd 1px, transparent 1px) center center;
+  background-size: 20px 20px;
+  animation: moveDots 20s linear infinite;
+  margin: 0; /* Ensure no margin is applied */
+  padding: 0; /* Ensure no padding is applied */
+  color: #1a1a1a; /* Text color for light mode */
+}
+
+/* Background color for dark mode, ensuring animation stays the same */
+.dark body {
+  background: radial-gradient(circle, #333 1px, transparent 1px) center center;
+  background-size: 20px 20px;
+  animation: moveDots 20s linear infinite;
+  color: #eee; /* Text color for dark mode */
 }
