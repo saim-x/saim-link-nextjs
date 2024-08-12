@@ -8,7 +8,7 @@ import TechStackFlairs from './components/TechStackFlairs';
 export default function Home() {
   return (
     <>
-      <SEO title="Saim's Links" description="Connect with Saim, a Web & App developer, Designer, and CS student." />
+      <SEO title="Saim&apos;s Links" description="Connect with Saim, a Web & App developer, Designer, and CS student." />
       <div className="flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
         <div className="absolute top-5 right-5">
           <DarkModeToggle />
@@ -17,7 +17,7 @@ export default function Home() {
           <div className="mb-8">
             <Image
               src="/p2.jpg"
-              alt="Saim's Profile Picture"
+              alt="Saim&apos;s Profile Picture"
               width={150}
               height={150}
               className="rounded-full mx-auto"
